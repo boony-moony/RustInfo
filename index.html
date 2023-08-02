@@ -45,6 +45,12 @@
     h2 {
       color: #007bff;
     }
+    footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  }
 
     /* Dark mode status text box */
     #dark-mode-status {
@@ -72,16 +78,10 @@
     body.dark-mode ul li a {
       color: #007bff;
     }
-    body {
-      margin: 0;
-      padding: 0;
+
+    body.dark-mode h2 {
+      color: #007bff;
     }
-  footer {
-  text-align: center;
-  padding: 3px;
-  background-color: DarkSalmon;
-  color: white;
-}
 </style>
 </head>
   <h1>Rust Raid Cost List</h1>
@@ -145,7 +145,7 @@
             - 63 Explo, 75 Explo, 1 C4, 2 Rocket.
           </li>
           <li>
-            6B. <a href="https://rustlabs.com/item/prison-cell-gate#tab=destroyed-by;filter=0,1,0,0,0;sort=4,0,3">🔗 Prison Cell Gate</a>
+            6B. <a href="https://rustlabs.com/item/prison-cell-gate#tab=destroyed-by;filter=0,1,0,0,0;sort=4,0,3">🔗Prison Cell Gate</a>
             - 75 Explo, 1 C4, 2 Rocket.
           </li>
           <li>
@@ -196,13 +196,13 @@
   <div id="dark-mode-status" onclick="toggleDarkMode()">Grey</div>
 
     <!-- footer -->
-  <footer>
+<footer>
   <p>Author: Hege Refsnes<br>
   <a href="mailto:hege@example.com">hege@example.com</a></p>
 </footer>
     
-    <!-- JavaScript for dark mode functionality -->
-   <script>
+  <!-- JavaScript for dark mode functionality -->
+  <script>
     function toggleDarkMode() {
       const body = document.body;
       body.classList.toggle('dark-mode');
