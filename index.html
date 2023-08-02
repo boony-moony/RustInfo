@@ -75,10 +75,17 @@
 
     body.dark-mode h2 {
       color: #007bff;
-    }
     .footnotes {
-      margin-top: 30px;
+      margin: 30px 0;
+      padding: 10px;
+      background-color: lightgrey;
       font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footnotes p {
+      margin: 0;
     }
     .footnotes a {
       margin-right: 10px;
@@ -197,11 +204,12 @@
   <div id="dark-mode-status" onclick="toggleDarkMode()">Grey</div>
 
     <!-- Footnotes -->
-    <div class="footnotes">
-    <p>Footnotes:</p>
-    <p>1. Check out my <a href="https://www.steamcommunity.com/your_username">Steam profile</a>.</p>
-    <p>2. Subscribe to my <a href="https://www.youtube.com/your_channel">YouTube channel</a>.</p>
-  </div>
+  <div class="footnotes">
+    <div>
+      <p>Footnotes:</p>
+      <p>1. Check out my <a href="https://www.steamcommunity.com/your_username">Steam profile</a>.</p>
+      <p>2. Subscribe to my <a href="https://www.youtube.com/your_channel">YouTube channel</a>.</p>
+    </div>
   
     <!-- JavaScript for dark mode functionality -->
    <script>
