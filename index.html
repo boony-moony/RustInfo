@@ -31,6 +31,11 @@
       text-decoration: underline;
     }
 
+    a:active {
+      color: #a7adb4;
+      text-decoration: none;
+   }
+
     /* List styling */
     ul {
       padding-left: 20px;
@@ -41,9 +46,14 @@
     }
 
     /* Heading styles */
-    h1 {
+    main h1 {
       text-align: center;
       color: #000;
+      margin:3rem -3rem;
+    }
+    main h1#title {
+      border:solid 3px rgba(0, 0, 0, 0.76) ;
+      border-radius: 2rem;
     }
 
     h2 {
@@ -81,16 +91,22 @@
       color: #007bff;
     }
     footer {
-      overflow:none;
       text-align: center;
-      padding: 1rem;
+      padding: 1rem 2rem;
       background-color: rgba(0, 0, 0, 0.76);
       color: white;
-    }    
-</style>
+    }
+    footer h1 {
+      color:white;
+    }
+    footer img { 
+      width:3rem;
+      padding:0 1rem;
+    }
+  </style>
 </head>
 <main>
-  <h1>Rust Raid Cost List</h1>
+  <h1 id="title">Rust Raid Cost List</h1>
 
   <!-- Existing content (from the previous version) -->
   <ul>
@@ -151,7 +167,7 @@
             - 63 Explo, 75 Explo, 1 C4, 2 Rocket.
           </li>
           <li>
-            6B. <a href="https://rustlabs.com/item/prison-cell-gate#tab=destroyed-by;filter=0,1,0,0,0;sort=4,0,3">🔗Prison Cell Gate</a>
+            6B. <a href="https://rustlabs.com/item/prison-cell-gate#tab=destroyed-by;filter=0,1,0,0,0;sort=4,0,3">🔗 Prison Cell Gate</a>
             - 75 Explo, 1 C4, 2 Rocket.
           </li>
           <li>
@@ -174,14 +190,8 @@
               2C. <a href="https://rustlabs.com/item/flame-turret">🔗 Flame turret</a>
               - 34 Explo, 1 C4, 2 Rockets.
             </li>
-
-  <h2>For more info click the links:</h2>
-  <ul>
-    <p><a href="https://rustlabs.com/group=build">All constructions</a></p>
   </ul>
 
-  <p>Creator of list: <a href="https://steamcommunity.com/id/boonymoony/">Creator's Steam Profile</a></p>
-  <p><a href="https://www.youtube.com/channel/UC8uEqI0huHwj55S5RizxWeA">List creator's youtube</a></p>
   <h2 class="change-log">Change log: V 1.0</h2>
   <ul>
     <li>Added auto turret.</li>
@@ -203,9 +213,13 @@
 
   <div id="dark-mode-status" onclick="toggleDarkMode()">Grey</div>
 <footer>
+  <h1>For more info</h1>
+  <a href="https://www.youtube.com/channel/UC8uEqI0huHwj55S5RizxWeA" title="My Youtube channel"><img src="youtube.png"></a> 
+  <a href="https://steamcommunity.com/id/boonymoony/" title="My steam account"><img src="steam_Logo.png"></a> 
+  <a href="https://rustlabs.com/group=build" title="All Rustlab constructions."><img src="rust.gif"></a> 
+
     <p>
-      Author: Hege Refsnes<br>
-      <a href="mailto:hege@example.com">hege@example.com</a>
+      Made by boonymoony
     </p>
 </footer>
 
