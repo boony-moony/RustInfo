@@ -53,7 +53,7 @@
       right: 20px;
       padding: 8px;
       background-color: #000;
-      color: #fff;
+      color: #FFFFFF;
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 14px;
@@ -61,7 +61,7 @@
 
     /* Dark mode styles */
     body.dark-mode {
-      background-color: #000;
+      background-color: #262626;
       color: #fff;
     }
 
@@ -159,26 +159,35 @@
               - 200 Explo, 1 C4, 4 Rockets.
             </li>
             <li>
-              2C. <a href="https://rustlabs.com/item/sam-site#tab=destroyed-by;filter=0,1,0,0,0;sort=4,0,2">🔗 Flame turret</a>
+              2C. <a href="https://rustlabs.com/item/flame-turret">🔗 Flame turret</a>
               - 34 Explo, 1 C4, 2 Rockets.
             </li>
 
   <h2>For more info click the links:</h2>
   <ul>
-    <li><a href="https://rustlabs.com/group=build">All constructions</a></li>
+    <p><a href="https://rustlabs.com/group=build">All constructions</a></p>
   </ul>
 
   <p>Creator of list: <a href="https://steamcommunity.com/id/boonymoony/">Creator's Steam Profile</a></p>
-
+  <p>Creator of list: <a href="https://www.youtube.com/channel/UC8uEqI0huHwj55S5RizxWeA">Creator's youtube</a></p>
   <h2 class="change-log">Change log: V 1.0</h2>
   <ul>
     <li>Added auto turret.</li>
     <li>Added SAM site.</li>
     <li>Added flame turret.</li>
   </ul>
-
+  <h2 class="change-log">Change log: V 1.1</h2>
+  <ul>
+    <li>Fixed darkmode button.</li>
+    <li>removed dots from info link and creator link.</li>
+  </ul>
+  <h2 class="change-log">Change log: V 1.2</h2>
+  <ul>
+    <li>Changed darkmode to be gray.</li>
+    <li>Linked creators youtube.</li>
+  </ul>
   <!-- Dark mode status text box -->
-  <div id="dark-mode-status" onclick="toggleDarkMode()">dark</div>
+  <div id="dark-mode-status" onclick="toggleDarkMode()">Grey</div>
 
   <!-- JavaScript for dark mode functionality -->
   <script>
@@ -191,10 +200,9 @@
       if (body.classList.contains('dark-mode')) {
         darkModeStatus.textContent = 'White';
       } else {
-        darkModeStatus.textContent = 'Dark';
+        darkModeStatus.textContent = 'Grey';
       }
     }
   </script>
 </body>
-
 </html>
