@@ -7,6 +7,17 @@
   <link rel="icon" href="Scrap_icon.png" type="image/png">
   <style>
     /* Set the default background color to white and text color to black */
+    <body>
+  <h1>Rust Raid Cost List</h1>
+
+  <div class="buttons">
+    <button class="button" onclick="loadRaidList()">Rust Raid List</button>
+    <button class="button" onclick="loadChangeLog()">Changes</button>
+  </div>
+
+  <div id="contentContainer">
+    <!-- The content will be loaded here -->
+  </div>
     body {
       background-color: #fff;
       color: #000;
@@ -176,6 +187,37 @@
     <li>Added SAM site.</li>
     <li>Added flame turret.</li>
   </ul>
+    <script>
+    const contentContainer = document.getElementById('contentContainer');
+
+    function loadRaidList() {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', 'raid_list.html', true);
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          contentContainer.innerHTML = xhr.responseText;
+        }
+      };
+      xhr.send();
+    }
+
+    function loadChangeLog() {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', 'change_log.html', true);
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          contentContainer.innerHTML = xhr.responseText;
+        }
+      };
+      xhr.send();
+    }
+
+    // Show the raid list content initially
+    loadRaidList();
+  </script>
+</body>
+
+</html>
 
   <!-- Dark mode status text box -->
   <div id="dark-mode-status" onclick="toggleDarkMode()">dark</div>
