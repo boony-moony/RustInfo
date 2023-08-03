@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelogs</title>
+  <link rel="icon" href="../note.png" type="image/png">
+  <style>
+    /* Set the default background color to white and text color to black */
+    body {
+      background-color: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    main {
+            max-width: 800px;
+      margin: 0 auto;
+
+    }
+
+    /* Styling for links */
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: #a7adb4;
+      text-decoration: none;
+   }
+
+    /* List styling */
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Heading styles */
+    main h1 {
+      text-align: center;
+      color: #000;
+      margin:3rem -3rem;
+    }
+    h1#title {
+      color:rgb(65, 91, 164);
+      text-align: left;
+      background-color: rgb(77, 76, 76);     
+      margin: 0 0 4rem 0;
+      padding: 2rem;
+      line-height: 1.7rem;
+      font-size: 2rem;
+   }
+   h1#title a {
+      font-size:1.3rem;
+      margin:0;
+      padding-right:1rem;
+      color:inherit;
+    }
+    h2 {
+      color: #214974; 
+    }
+
+    /* Dark mode status text box */
+    #dark-mode-status {
+      position: absolute;
+    top: 40px;
+      right: 20px;
+      padding: 8px;
+      background-color: #373e54;
+      color: #FFFFFF;
+      border: 1px solid #2a2d4e;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    #dark-mode-status:hover {
+      cursor:pointer;
+    }
+
+    /* Dark mode styles */
+    body.dark-mode {
+      background-color: #262626;
+      color: #fff;
+    }
+
+    body.dark-mode ul li a {
+      color: #4285F4;
+    }
+
+    body ul li a {
+      color: #4285F4
+    }
+
+    body.dark-mode h2 {
+      color:#214974;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 2rem;
+      background-color: rgb(77, 76, 76);
+      color: rgb(65, 91, 164);
+      margin-top: 4rem;
+    }
+    footer h1 {
+      color:rgb(65, 91, 164);
+    }
+    footer img { 
+      width:3rem;
+      padding:0 1rem;
+    }
+  
+    
+  </style>
+</head>
+<h1 id="title">Changelogs<br>
+  <a href="..">List</a>
+  <a href="../rrc">Resources</a>
+  <a href="../changelog">Changelogs</a>
+</h1>
+<main>
+
+</li>
+</ul>
+      <h2 class="change-log">Change log: V 1.0</h2>
+      <ul>
+        <li>Added auto turret.</li>
+        <li>Added SAM site.</li>
+        <li>Added flame turret.</li>
+      </ul>
+        <h2 class="change-log">Change log: V 1.1</h2>
+      <ul>
+        <li>Fixed darkmode button.</li>
+        <li>removed dots from info link and creator link.</li>
+      </ul>
+        <h2 class="change-log">Change log: V 1.2</h2>
+      <ul>
+      <li>Changed darkmode to be gray.</li>
+      <li>Linked creators youtube.</li>
+      </ul>
+        <h2>Change log: V 1.3</h2>
+      <li>Added footer and header.</li>
+      <li>Added colors to light and dark mode.</li>
+      <li>Changed darkmode icon.</li>
+
+      <h2>Change log: V 1.4</h2>
+      <li>Added resources and list page.</li>
+      <li>Redesigned header.</li>
+      <li>Recolored darkmode button.</li>
+
+      <h2>Change log: V 1.5</h2>
+      <li>Added Change logs</li>
+
+<!-- ^CHANGE LOG^-->
+
+
+
+        </ul>
+    </il>
+    
+
+</ul>
+<!-- Dark mode status text box -->
+</main>
+
+
+
+
+<div id="dark-mode-status" onclick="toggleDarkMode()">🌙</div>
+<footer>
+<h1>For more info</h1>
+<a href="https://www.youtube.com/channel/UC8uEqI0huHwj55S5RizxWeA" title="My Youtube channel"><img src="../youtube.png"></a> 
+<a href="https://steamcommunity.com/id/boonymoony/" title="My steam account"><img src="../steam_Logo.png"></a> 
+<a href="https://rustlabs.com/group=resources" title="All Rustlab constructions."><img src="../rust.gif"></a> 
+<p>
+  Made by boonymoony
+</p>
+</footer>
+
+
+
+<!-- JavaScript for dark mode functionality -->
+<script>
+  function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+
+    // Update the dark mode status text
+    const darkModeStatus = document.getElementById('dark-mode-status');
+    if (body.classList.contains('dark-mode')) {
+      darkModeStatus.textContent = '☀️'
+    } else {
+      darkModeStatus.textContent = '🌙';
+    }
+  }
+</script>
+</body>
+</html>
